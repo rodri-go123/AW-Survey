@@ -179,12 +179,10 @@
         console.log('Comments: ' + formData.get('comments'));
 
         const age = formData.get('age');
-        const living = formData.get('living-situation');
-        const living_extra = formData.get('living-situation-specify');
-        const concerns = {formData.get('concern1'), formData.get('concern2'), formData.get('concern3'), formData.get('concern4'), formData.get('concern5'), formData.get('concern6'), formData.get('concern7'), formData.get('concern8')};
-        const concerns_extra = formData.get('concern-specify');
-        const tech_solutions = {formData.get('tech-solutions'), formData.get('tech-solutions-specify')};
-        const non_tech_solutions = {formData.get('non-tech-solutions'), formData.get('non-tech-solutions-specify')};
+        const living = formData.get('living-situation', 'living-situation-specify');
+        const concerns = formData.get('concern1', 'concern2', 'concern3', 'concern4', 'concern5', 'concern6', 'concern7', 'concern8', 'concern-specify');
+        const tech_solutions = formData.get('tech-solutions', 'tech-solutions-specify');
+        const non_tech_solutions = formData.get('non-tech-solutions', 'non-tech-solutions-specify');
         const often_falls_into_rabbitholes = formData.get('statement1');
         const opinions_are_influenced = formData.get('statement2');
         const content_confirms_opinions = formData.get('statement3');
@@ -193,17 +191,13 @@
         const too_much_time = formData.get('statement6');
         const scrolls_idle_time = formData.get('statement7');
         const net_fosters_communities = formData.get('statement8');
-        const impacts_health = formData.get('health-impact');
-        const health_extra = formData.get('health-impact-specify');
-        const body_state = {formData.get('body-state1'), formData.get('body-state2'), formData.get('body-state3')};
-        const body_extra = formData.get('body-state-specify');
-        const platforms = {formData.get('platform1'), formData.get('platform2'), formData.get('platform3'), formData.get('platform4'), formData.get('platform5'), formData.get('platform6'), formData.get('platform7'), formData.get('platform8'), formData.get('platform9'),
-        formData.get('platform10'), formData.get('platform11'), formData.get('platform12'), formData.get('platform13')};
-        const platforms_extra = formData.get('platforms-specify');
+        const impacts_health = formData.get('health-impact', 'healh-impact-specify');
+        const body_state = formData.get('body-state1', 'body-state2', 'body-state3', 'body-state-specify');
+        const platforms = formData.get('platform1', 'platform2', 'platform3', 'platform4', 'platform5', 'platform6', 'platform7', 'platform8', 'platform9', 'platform10', 'platform11', 'platform12', 'platform13', 'platforms-specify');
         const comments = formData.get('comments');
 
-        const data = { age, living, living_extra, concerns, concerns_extra, tech_solutions, non_tech_solutions, often_falls_into_rabbitholes, opinions_are_influenced, content_confirms_opinions, engages_online_debates, engages_real_life_rebates, too_much_time, scrolls_idle_time,
-        net_fosters_communities, impacts_health, health_extra, body_state, body_extra, platforms, platforms_extra, comments};
+        const data = { age, living, concerns, tech_solutions, non_tech_solutions, often_falls_into_rabbitholes, opinions_are_influenced, content_confirms_opinions, engages_online_debates, engages_real_life_rebates, too_much_time, scrolls_idle_time,
+        net_fosters_communities, impacts_health, body_state, platforms, comments};
 
         const options = {
           method: 'POST',
