@@ -178,11 +178,13 @@
          + formData.get('platform11') + ' | ' + formData.get('platform12') + ' | ' + formData.get('platform13') + ' ' + formData.get('platforms-specify'));
         console.log('Comments: ' + formData.get('comments'));
 
+        const space = "||";
         const age = formData.get('age');
-        const living = formData.get('living-situation') + formData.get('living-situation-specify');
-        const concerns = formData.get('concern1', 'concern2', 'concern3', 'concern4', 'concern5', 'concern6', 'concern7', 'concern8', 'concern-specify');
-        const tech_solutions = formData.get('tech-solutions', 'tech-solutions-specify');
-        const non_tech_solutions = formData.get('non-tech-solutions', 'non-tech-solutions-specify');
+        const living = formData.get('living-situation') + space + formData.get('living-situation-specify');
+        const concerns = formData.get('concern1') + space + formData.get('concern2') + space + formData.get('concern3') + space + formData.get('concern4') + space + formData.get('concern5') + space + formData.get('concern6') + space +
+        formData.get('concern7') + space + formData.get('concern8') + space + formData.get('concern-specify');
+        const tech_solutions = formData.get('tech-solutions') + space + formData.get('tech-solutions-specify');
+        const non_tech_solutions = formData.get('non-tech-solutions') + space + formData.get('non-tech-solutions-specify');
         const often_falls_into_rabbitholes = formData.get('statement1');
         const opinions_are_influenced = formData.get('statement2');
         const content_confirms_opinions = formData.get('statement3');
@@ -191,9 +193,10 @@
         const too_much_time = formData.get('statement6');
         const scrolls_idle_time = formData.get('statement7');
         const net_fosters_communities = formData.get('statement8');
-        const impacts_health = formData.get('health-impact', 'healh-impact-specify');
-        const body_state = formData.get('body-state1', 'body-state2', 'body-state3', 'body-state-specify');
-        const platforms = formData.get('platform1', 'platform2', 'platform3', 'platform4', 'platform5', 'platform6', 'platform7', 'platform8', 'platform9', 'platform10', 'platform11', 'platform12', 'platform13', 'platforms-specify');
+        const impacts_health = formData.get('health-impact') + space + formData.get('health-impact-specify');
+        const body_state = formData.get('body-state1') + space + formData.get('body-state2') + space + formData.get('body-state3') + space + formData.get('body-state-specify');
+        const concerns = formData.get('platform1') + space + formData.get('platform2') + space + formData.get('platform3') + space + formData.get('platform4') + space + formData.get('platform5') + space + formData.get('platform6') + space + formData.get('platform7') + space +
+        formData.get('platform8') + space + formData.get('platform9') + space + formData.get('platform10') + space + formData.get('platform11') + space + formData.get('platform12') + space + formData.get('platform13') + space + formData.get('platforms-specify');
         const comments = formData.get('comments');
 
         const data = { age, living, concerns, tech_solutions, non_tech_solutions, often_falls_into_rabbitholes, opinions_are_influenced, content_confirms_opinions, engages_online_debates, engages_real_life_rebates, too_much_time, scrolls_idle_time,
