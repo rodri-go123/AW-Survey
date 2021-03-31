@@ -179,7 +179,7 @@
         console.log('Comments: ' + formData.get('comments'));
 
         const age = formData.get('age');
-        const living = formData.get('living-situation', 'living-situation-specify');
+        const living = formData.get('living-situation') + formData.get('living-situation-specify');
         const concerns = formData.get('concern1', 'concern2', 'concern3', 'concern4', 'concern5', 'concern6', 'concern7', 'concern8', 'concern-specify');
         const tech_solutions = formData.get('tech-solutions', 'tech-solutions-specify');
         const non_tech_solutions = formData.get('non-tech-solutions', 'non-tech-solutions-specify');
