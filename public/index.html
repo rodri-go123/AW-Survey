@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qjo1yij.css">
+    <link rel="stylesheet" type="text/css" href="form-stylesheet.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <form class="form">
+      <p>The purpose of this survey is to inform my graduation project, a platform which aims
+        to empower people to browse the web more autonomously. Any information you give will be processed anonymously.
+        Information flows directly through my own server (<a href="https://rodri-go.net">rodri-go.net</a>) <i>without</i> any third-parties
+        involved (Google, Facebook, etc). Bullet-point answers will be published, longer format answers will not. If you want to
+        discuss or know more about the topics below, or just chat about daisies and muscle cars, please contact me at
+        <a href="mailto:rodrigo.garrett.cardoso@gmail.com">rodrigo.garrett.cardoso@gmail.com</a>.</p>
+        <br>
+
+      <p class="question">1: What is your age group?</p>
+        <p class="answer"><input type="radio" name="age" value="12-18">12-18<br>
+          <input type="radio" name="age" value="18-30">18-30<br>
+          <input type="radio" name="age" value="30-50">30-50<br>
+          <input type="radio" name="age" value="50-70">50-70<br>
+          <input type="radio" name="age" value="12-18">70+
+        </p>
+        <br>
+
+        <p class="question">2: What is your living situation?</p>
+          <p class="answer"><input type="radio" name="living-situation" value="family-or-partner">I live with my family or partner<br>
+            <input type="radio" name="living-situation" value="with-roommates">I live independently with housemates/friends<br>
+            <input type="radio" name="living-situation" value="alone">I live alone<br>
+            <input type="radio" name="living-situation" value="other">Other:<br>
+            <textarea name="living-situation-specify" rows="4" cols="50"></textarea><br>
+          </p>
+          <br>
+
+          <p class="question">3: Are you concerned by any of the following topics while browsing the internet?</p>
+            <p class="answer"><input type="checkbox" name="concern1" value="data-privacy">Data privacy<br>
+            <input type="checkbox" name="concern2" value="virus">Danger of getting virus or malware on your device<br>
+            <input type="checkbox" name="concern3" value="wasting-time">Fear of ‘wasting time’ or procrastinating online<br>
+            <input type="checkbox" name="concern4" value="suggested-content">Suggested content or ads that seem to know your preferences too well<br>
+            <input type="checkbox" name="concern5" value="false-info">False information (eg: fake news, ads disguised as articles…)<br>
+            <input type="checkbox" name="concern6" value="illegal">Fear of getting caught doing something illicit or illegal (eg: streaming pirated content, discussing illicit activities over online messages…)<br>
+            <input type="checkbox" name="concern7" value="nsfw">Fear of mistakenly clicking into NSFW/Disturbing content<br>
+            <input type="checkbox" name="concern8" value="other">Other(s): <br>
+            <textarea name="concern-specify" rows="4" cols="50"></textarea><br>
+            </p>
+            <br>
+
+          <p class="question">4: Are you employing any technological solutions to address these topics (Apps, Browser Extensions, etc.)?</p>
+          <p class="answer"><input type="radio" name="tech-solutions" value="yes">Yes<br>
+            <input type="radio" name="tech-solutions" value="no">No<br>
+          </p>
+
+          <p class="question">If yes, which ones and why?</p>
+            <textarea name="tech-solutions-specify" rows="4" cols="50"></textarea><br>
+          <br>
+          <br>
+
+          <p class="question">5: Are you employing any non-tech solutions to address these topics? (Sets of Rules, Behaviours, Rituals, etc.)</p>
+          <p class="answer"><input type="radio" name="non-tech-solutions" value="yes">Yes<br>
+            <input type="radio" name="non-tech-solutions" value="no">No<br>
+          </p>
+
+          <p class="question">If yes, what are you doing?</p>
+            <textarea name="non-tech-solutions-specify" rows="4" cols="50"></textarea><br>
+          <br>
+          <br>
+
+          <p class="question">6: How likely are you to agree with the following statements?
+            <p class="answer">I often fall into time-consuming internet rabbit holes.<br>
+              <input type="radio" name="statement1" value="0"> Strongly Disagree <input type="radio" name="statement1" value="1"> Disagree <input type="radio" name="statement1" value="2"> Neutral <input type="radio" name="statement1" value="3"> Agree <input type="radio" name="statement1" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">I feel like my opinions and ideas are somewhat influenced by the content I see online.<br>
+              <input type="radio" name="statement2" value="0"> Strongly Disagree <input type="radio" name="statement2" value="1"> Disagree <input type="radio" name="statement2" value="2"> Neutral <input type="radio" name="statement2" value="3"> Agree <input type="radio" name="statement2" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">Most of the content I see online seems to confirm my opinions.<br>
+              <input type="radio" name="statement3" value="0"> Strongly Disagree <input type="radio" name="statement3" value="1"> Disagree <input type="radio" name="statement3" value="2"> Neutral <input type="radio" name="statement3" value="3"> Agree <input type="radio" name="statement3" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">I’m prone to engage in internet debates with strangers in forums and social media.<br>
+              <input type="radio" name="statement4" value="0"> Strongly Disagree <input type="radio" name="statement4" value="1"> Disagree <input type="radio" name="statement4" value="2"> Neutral <input type="radio" name="statement4" value="3"> Agree <input type="radio" name="statement4" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">I’m prone to engage in debates in real life with people I know.<br>
+              <input type="radio" name="statement5" value="0"> Strongly Disagree <input type="radio" name="statement5" value="1"> Disagree <input type="radio" name="statement5" value="2"> Neutral <input type="radio" name="statement5" value="3"> Agree <input type="radio" name="statement5" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">I feel like I spend too much time on the internet.<br>
+              <input type="radio" name="statement6" value="0"> Strongly Disagree <input type="radio" name="statement6" value="1"> Disagree <input type="radio" name="statement6" value="2"> Neutral <input type="radio" name="statement6" value="3"> Agree <input type="radio" name="statement6" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">I often find myself scrolling through news feeds or browsing the internet during idle time.<br>
+              <input type="radio" name="statement7" value="0"> Strongly Disagree <input type="radio" name="statement7" value="1"> Disagree <input type="radio" name="statement7" value="2"> Neutral <input type="radio" name="statement7" value="3"> Agree <input type="radio" name="statement7" value="4"> Strongly Agree
+            </p>
+
+            <p class="answer">I believe the internet fosters the communities which I’m a part of (family and friends, work, hobbies or interests…)<br>
+              <input type="radio" name="statement8" value="0"> Strongly Disagree <input type="radio" name="statement8" value="1"> Disagree <input type="radio" name="statement8" value="2"> Neutral <input type="radio" name="statement8" value="3"> Agree <input type="radio" name="statement8" value="4"> Strongly Agree
+            </p>
+            <br>
+
+            <p class="question">7: Do you think your physical and mental health has been impacted (positively or negatively) by your time spent on the internet?</p>
+            <p class="answer"><input type="radio" name="health-impact" value="yes">Yes<br>
+              <input type="radio" name="health-impact" value="no">No<br>
+            </p>
+
+            <p class="question">If yes, how has it been impacted?</p>
+              <textarea name="health-impact-specify" rows="4" cols="50"></textarea><br>
+            <br>
+            <br>
+
+            <p class="question">8: How would you describe your physical activity when you are leisurely browsing the internet?</p>
+              <p class="answer"><input type="checkbox" name="body-state1" value="sitting">Idle (Sitting, Laying)<br>
+              <input type="checkbox" name="body-state2" value="active-tasks">Performing active tasks (Walking, Cleaning, Cooking)<br>
+              <input type="checkbox" name="body-state3" value="doing-sports">Engaged in physical activity (Running, Exercising, Stretching)<br>
+              <input type="checkbox" name="body-state4" value="other">Other (please specify):<br>
+              <textarea name="body-state-specify" rows="4" cols="50"></textarea><br>
+              </p>
+              <br>
+
+              <p class="question">9: Which platforms do you spend the most time on when online?</p>
+                <p class="answer"><input type="checkbox" name="platform1" value="youtube">YouTube<br>
+                <input type="checkbox" name="platform2" value="twitter">Twitter<br>
+                <input type="checkbox" name="platform3" value="facebook">Facebook<br>
+                <input type="checkbox" name="platform4" value="tumblr">Tumblr<br>
+                <input type="checkbox" name="platform5" value="instagram">Instagram<br>
+                <input type="checkbox" name="platform6" value="whatsapp">Whatsapp<br>
+                <input type="checkbox" name="platform7" value="reddit">Reddit<br>
+                <input type="checkbox" name="platform8" value="netflix">Netflix<br>
+                <input type="checkbox" name="platform9" value="snapchat">Snapchat<br>
+                <input type="checkbox" name="platform10" value="4chan">4chan<br>
+                <input type="checkbox" name="platform11" value="pinterest">Pinterest<br>
+                <input type="checkbox" name="platform12" value="tiktok">Tiktok<br>
+                <input type="checkbox" name="platform13" value="other">Other(s):<br>
+                <textarea name="platforms-specify" rows="4" cols="50"></textarea><br>
+                </p>
+                <br>
+
+                <p class="question">10: If you have any last remark or piece of advice you want to share, feel free to use the box below:</p>
+                <textarea name="comments" rows="4" cols="50"></textarea><br>
+
+
+        <input id="submit-button" type="submit" name="submit">
+    </form>
+    </div>
+
+    <script>
+
+      const wrapper = document.querySelector('.wrapper'),
+      form = wrapper.querySelectorAll('.form'),
+      submitInput = form[0].querySelector('input[type="submit"]');
+
+      function getData(e) {
+        e.preventDefault();
+        var formData = new FormData(form[0]);
+        console.log('1 Age: ' + formData.get('age'));
+        console.log('2 Living Situation: ' + formData.get('living-situation') + ': ' + formData.get('living-situation-specify'));
+        console.log('3 Concern(s): ' + formData.get('concern1') + ' | ' + formData.get('concern2') + ' | ' + formData.get('concern3') + ' | ' +
+        formData.get('concern4') + ' | ' + formData.get('concern5') + ' | ' + formData.get('concern6') + ' | ' + formData.get('concern7') + ' | ' +
+        formData.get('concern8') + ' ' + formData.get('concern-specify'));
+        console.log('4 Tech Solution(s): ' + formData.get('tech-solutions') + ' ' + formData.get('tech-solutions-specify'));
+        console.log('5 Non-tech Solution(s): ' + formData.get('non-tech-solutions') + ' ' + formData.get('non-tech-solutions-specify'));
+        console.log('6 ' + 'Often falls into rabbit-holes: ' + formData.get('statement1') + ' | ' + 'Opinions are influenced: ' + formData.get('statement2')
+        + ' | ' + 'Content confirms opinions: ' + formData.get('statement3') + ' | ' + 'Prone to engage in online debates: ' + formData.get('statement4') +
+        ' | ' + 'Prone to engage in real-life debates: ' + formData.get('statement5') + ' | ' + 'Spends too much time online: ' + formData.get('statement6')
+        + ' | ' + 'Scrolls often during idle time: ' + formData.get('statement7') + ' | ' + 'Internet fosters communities: ' + formData.get('statement8'));
+        console.log('7 Internet impacting health: ' + formData.get('health-impact') + ' ' + formData.get('health-impact-specify'));
+        console.log('8 Body State: ' + formData.get('body-state1') + ' | ' + formData.get('body-state2') + ' | ' + formData.get('body-state3') + ' ' +
+        formData.get('body-state-specify'));
+        console.log('9 Platforms: ' + formData.get('platform1') + ' | ' + formData.get('platform2') + ' | ' + formData.get('platform3') + ' | '
+         + formData.get('platform4') + ' | '  + formData.get('platform4') + ' | '  + formData.get('platform5') + ' | '  + formData.get('platform6') + ' | '
+         + formData.get('platform7') + ' | ' + formData.get('platform8') + ' | ' + formData.get('platform9') + ' | ' + formData.get('platform10') + ' | '
+         + formData.get('platform11') + ' | ' + formData.get('platform12') + ' | ' + formData.get('platform13') + ' ' + formData.get('platforms-specify'));
+        console.log('Comments: ' + formData.get('comments'));
+
+        const age = formData.get('age');
+        const living = formData.get('living-situation');
+
+        const data = { age, living};
+        const options = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        };
+        fetch('/api', options);
+      };
+
+      document.addEventListener('DOMContentLoaded', function(){
+        submitInput.addEventListener('click', getData, false);
+      }, false);
+
+    </script>
+  </body>
+
+</html>
