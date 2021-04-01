@@ -1,7 +1,6 @@
 const express = require('express');
 const firebase = require('firebase');
 const Datastore = require('nedb');
-let number = 1;
 
 var firebaseConfig = {
     apiKey: "AIzaSyAZ92A2VdvPh78MN453AKHy5vs7QRz7zKk",
@@ -33,6 +32,8 @@ app.post('/api', (request, response) => {
   data.tinestamp = timestamp;
   database.insert(data);
 
+  let number =  Math.floor((Math.random() * 9999999) + 1);
+
   firebase_database.ref(number).update(data, function(error) {
       if (error) {
         // The write failed...
@@ -40,7 +41,6 @@ app.post('/api', (request, response) => {
       } else {
         // The write was successful...
         console.log("success")
-        number = number + 1;
       }
   });
 });
