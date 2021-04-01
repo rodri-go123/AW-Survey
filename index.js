@@ -15,16 +15,6 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 let firebase_database = firebase.database()
 
-firebase_database.ref("customPath").set(obj, function(error) {
-    if (error) {
-      // The write failed...
-      console.log("Failed with error: " + error)
-    } else {
-      // The write was successful...
-      console.log("success")
-    }
-})
-
 const app = express();
 const port = process.env.PORT
 app.listen(port, () => {
@@ -41,4 +31,14 @@ app.post('/api', (request, response) => {
   const timestamp = Date.now();
   data.tinestamp = timestamp;
   database.insert(data);
+
+  firebase_database.ref("customPath").set(data, function(error) {
+      if (error) {
+        // The write failed...
+        console.log("Failed with error: " + error)
+      } else {
+        // The write was successful...
+        console.log("success")
+      }
+  });
 });
