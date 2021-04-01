@@ -32,7 +32,7 @@ app.post('/api', (request, response) => {
   data.tinestamp = timestamp;
   database.insert(data);
 
-  firebase_database.ref("customPath").set(data, function(error) {
+  firebase_database.ref("customPath").update(data, function(error) {
       if (error) {
         // The write failed...
         console.log("Failed with error: " + error)
